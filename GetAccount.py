@@ -24,7 +24,7 @@ def lambda_handler(event, context):
     if items: # User was found
         return {
             'statusCode': 200,
-            'body': json.dumps(items)
+            'body': json.dumps(items[0])
         }
     else: # User was not found
         return {
